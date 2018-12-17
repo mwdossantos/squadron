@@ -1,1 +1,1 @@
-# squadron-js
+# squadron-dev
