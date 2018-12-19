@@ -1,4 +1,4 @@
-/* COOLORS https://coolors.co/fcfcfc-011627-17b890-5d576b-011627 */
+/* COOLORS https://coolors.co/182b3a-56e39f-fcfcfc-424b54-160c28 */
 
 :root {
   --regular: 400;
@@ -10,13 +10,13 @@
   --balck: black;
   --translucent: 0.75;
 
-  --squadron: #3291F0;
+  --squadron: #182B3A;
 
-  --primary: #00CEB6;
-  --primary-light: #5EC1E2;
-  --primary-dark: #47AACC;
+  --primary: #56E39F;
+  --primary-light: #74E8B0;
+  --primary-dark: #4FCF91;
 
-  --secondary: #449BF1;
-  --secondary-light: #57A5F2;
-  --secondary-dark: #2E84DB;
+  --secondary: #2F404E;
+  --secondary-light: #465561;
+  --secondary-dark: #182B3A;
 }

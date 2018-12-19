@@ -16,12 +16,11 @@ header {
 }
 
 .header-logo {
-  background-image: url(../img/squadron-logo-icon-black.svg);
-  filter: invert(1);
-  width: 40px;
   height: 40px;
-  display: inline-block;
-  opacity: 0.5;
+}
+
+.header-logo img {
+  height: 40px;
 }
 
 .header-nav-container {
@@ -36,4 +35,8 @@ header {
   font-size: 14px;
   margin-left: 20px;
   transition: all .2s ease;
+}
+
+.nav-link {
+
 }

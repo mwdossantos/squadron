@@ -8,7 +8,7 @@
   cursor: pointer;
   display: inline-block;
   background-color: var(--primary);
-  color: var(--white);
+  color: var(--black);
   font-weight: var(--medium);
   transition: all .2s ease;
 }
