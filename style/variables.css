@@ -1,0 +1,22 @@
+/* COOLORS https://coolors.co/fcfcfc-011627-17b890-5d576b-011627 */
+
+:root {
+  --regular: 400;
+  --medium: 500;
+  --bold: 700;
+
+
+  --white: white;
+  --balck: black;
+  --translucent: 0.75;
+
+  --squadron: #3291F0;
+
+  --primary: #00CEB6;
+  --primary-light: #5EC1E2;
+  --primary-dark: #47AACC;
+
+  --secondary: #449BF1;
+  --secondary-light: #57A5F2;
+  --secondary-dark: #2E84DB;
+}
