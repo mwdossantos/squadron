@@ -1,21 +1,21 @@
 .introduction {
-  padding: 0px 20px;
   background-color: var(--squadron);
   height: 500px;
+  position: relative;
 }
 
 .introduction-container {
   height: 100%;
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
 .introduction-left-container {
+  margin-left: 20px;
   color: var(--white);
   font-size: 32px;
-  position: absolute;
   max-width: 50%;
   z-index: 1;
   overflow: hidden;

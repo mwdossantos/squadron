@@ -1,4 +1,7 @@
 .ontdek {
-  padding: 20px;
-  background-color: var(--body-bg);
+  margin: 20px 0px;
+}
+
+.project-container {
+  margin: 0px 20px;
 }

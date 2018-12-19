@@ -7,6 +7,10 @@
   -webkit-font-smoothing: antialiased;
 }
 
+body {
+  background-color: var(--body-bg);
+}
+
 a {
   text-decoration: none;
   outline: none;

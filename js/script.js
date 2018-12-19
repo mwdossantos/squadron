@@ -28,6 +28,13 @@ function animator() {
     opacity: 0
   });
 
+  ScrollReveal().reveal('.row', {
+    delay: 300,
+    origin: 'bottom',
+    distance: '100px',
+    opacity: 0
+  });
+
   ScrollReveal().reveal('.introduction', {
     delay: 300,
     origin: 'top',
