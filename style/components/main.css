@@ -1,0 +1,10 @@
+main {
+  margin-top: 80px;
+  background-color: var(--body-bg);
+}
+
+
+.introduction {
+  padding: 20px;
+  background-color: var(--squadron);
+}

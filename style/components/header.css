@@ -12,7 +12,7 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  padding: 0px 30px;
+  padding: 0px 20px;
 }
 
 .header-logo {
@@ -21,6 +21,17 @@ header {
 
 .header-logo img {
   height: 40px;
+  transition: all .2s ease;
+}
+
+.header-logo img:hover {
+  transform: translateX(5px);
+  filter: var(--darken);
+}
+
+.header-logo img:active {
+  transform: translateX(0px);
+  filter: var(--darken);
 }
 
 .header-nav-container {
@@ -35,8 +46,38 @@ header {
   font-size: 14px;
   margin-left: 20px;
   transition: all .2s ease;
+  position: relative;
+  height: 40px;
+  display: flex;
+  align-items: center;
 }
 
-.nav-link {
+.nav-link:hover {
+  transform: translateY(-3px);
+}
 
+.nav-link:active {
+  transform: translateY(0px);
+  filter: var(--darken);
+}
+
+.nav-link:hover .underline {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* .nav-link:active .underline {
+  display: none;
+} */
+
+.underline {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  bottom: 0px;
+  background-color: var(--primary);
+  width: 100%;
+  height: 3px;
+  border-radius: 100px;
+  transition: all .2s ease;
 }

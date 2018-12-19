@@ -7,10 +7,12 @@
 
 
   --white: white;
-  --balck: black;
-  --translucent: 0.75;
+  --black: black;
+  --darken: brightness(0.8);
+  --lighten: brightness(1.2);
 
   --squadron: #182B3A;
+  --body-bg: #FCFCFC;
 
   --primary: #56E39F;
   --primary-light: #74E8B0;
