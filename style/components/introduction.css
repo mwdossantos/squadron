@@ -1,0 +1,34 @@
+.introduction {
+  padding: 0px 20px;
+  background-color: var(--squadron);
+  height: 500px;
+}
+
+.introduction-container {
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.introduction-left-container {
+  color: var(--white);
+  font-size: 32px;
+  position: absolute;
+  max-width: 50%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.introduction-left-container h1 {
+  cursor: default;
+  text-decoration: underline;
+  text-decoration-color: var(--primary);
+}
+
+.introduction-image {
+  height: 100%;
+  position: absolute;
+  right: 0px;
+}

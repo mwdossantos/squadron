@@ -4,7 +4,9 @@ header {
   left: 0;
   right: 0;
   height: 80px;
-  background-color: var(--squadron);
+  z-index: 2;
+  padding: 0px 20px;
+  transition: all .2s ease;
 }
 
 .header-container {
@@ -12,7 +14,6 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  padding: 0px 20px;
 }
 
 .header-logo {
