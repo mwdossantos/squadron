@@ -1,12 +1,27 @@
 /* COOLORS https://coolors.co/182b3a-56e39f-fcfcfc-424b54-160c28 */
+@font-face {
+  font-family: pr;
+  src: url('fonts/Product Sans Regular.ttf');
+}
+
+@font-face {
+  font-family: pb;
+  src: url('fonts/Product Sans Bold.ttf');
+}
 
 :root {
 
   /* font weights */
-  --light: 300;
   --regular: 400;
   --medium: 500;
-  --bold: 700;
+  --bold: 600;
+
+  /* font styles */
+  --italic: italic;
+
+  /* font family's */
+  --pr: pr;
+  --pb: pb;
 
   /* font colors */
   --white: white;
@@ -19,11 +34,7 @@
   --body-bg: #FCFCFC;
 
   /* button colors */
-  --primary: #56E39F;
-  --primary-light: #74E8B0;
-  --primary-dark: #4FCF91;
-
-  --secondary: #2F404E;
-  --secondary-light: #465561;
-  --secondary-dark: #182B3A;
+  --primary: ;
+  --primary-light: ;
+  --primary-dark: ;
 }

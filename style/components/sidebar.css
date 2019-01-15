@@ -1,0 +1,46 @@
+.sidebar {
+  background-color: black;
+  width: 240px;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.sidebar-top {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+}
+
+.sidebar-top img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.sidebar-top-company-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.company-name {
+  color: var(--white);
+  font-weight: var(--medium);
+  font-size: 14px;
+}
+
+.company-id {
+  color: var(--white);
+  opacity: 0.6;
+  font-weight: var(--medium);
+  font-size: 14px;
+}
+
+.company-status {
+  color: var(--white);
+  font-weight: var(--medium);
+  font-size: 14px;
+}
