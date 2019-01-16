@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="style/components/header.css" type="text/css">
     <link rel="stylesheet" href="style/components/sidebar.css" type="text/css">
     <link rel="stylesheet" href="style/components/main.css" type="text/css">
+    <link rel="stylesheet" href="style/components/form.css" type="text/css">
+
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
 
   </head>
   <body>
@@ -28,7 +31,7 @@
         </div>
         <div class="sidebar-nav">
           <ul>
-            <li class="nav-item active">
+            <li class="nav-item">
               <a href="index.html">
                 <img src="style/img/start.png" alt="Start">
                 <span class="nav-item-text">Start</span>
@@ -65,7 +68,7 @@
                 <span class="nav-item-text">Squadron Support</span>
               </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a href="contact.html">
                 <img src="style/img/contact.png" alt="Contact">
                 <span class="nav-item-text">Contact</span>
@@ -94,9 +97,20 @@
       </div>
 
       <main>
-        <h1>Welkom bij de Squadron!</h1>
-        <p>Gebruik het menu links om meer te weten te komen over de diensten die we aanbieden.</p>
+        <h1>Neem contact op</h1>
+        <p>Het maakt niet uit wat je wil vragen. Misschien is er iets niet duidelijk op de website of heb je een inhoudelijke vraag. Alles wordt geaccepteerd, schiet er op los!</p>
+        <p>We reageren gemiddeld binnen een dag. Als je een sneller antwoord wil of een kleine vraag hebt, kun je met ons chatten via de knop rechtsonder.</p>
+        <form action="https://send.pageclip.co/QGqwZobqxW1hhf4FcQrm9U00ZT9hczkV" class="pageclip-form" method="post">
 
+          <input type="text" name="name" placeholder="Je naam" />
+          <input type="email" name="email" placeholder="Je email" />
+          <input type="text" name="subject" placeholder="Waar gaat het over?" />
+          <textarea type="text" name="textarea" placeholder="Vertel ons wat er om gaat in je hoofd"></textarea>
+
+          <button type="submit" class="pageclip-form__submit">
+            <span>Send</span>
+          </button>
+        </form>
       </main>
     </div>
 
@@ -104,5 +118,6 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
   </body>
 </html>

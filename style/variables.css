@@ -26,6 +26,8 @@
   /* font colors */
   --white: white;
   --black: black;
+  --green: #4CD964;
+  --blue: #0095FF;
   --darken: brightness(0.8);
   --lighten: brightness(1.2);
 

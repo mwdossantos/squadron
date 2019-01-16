@@ -3,6 +3,7 @@
   padding: 0;
   font-family: pb;
   -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
 }
 
 body {
@@ -14,4 +15,31 @@ a {
   outline: none;
   color: inherit;
   transition: all .2s ease;
+}
+
+p {
+  font-family: var(--pr);
+  opacity: 0.6;
+  margin-top: 10px;
+  line-height: 25px;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+  padding: 15px;
+  background-color: var(--blue);
+  color: white;
+  font-size: 16px;
+  font-family: var(--pr)!important;
+  border-radius: 5px;
+  border: none;
+  transition: all .1s ease;
+}
+
+button:hover {
+  filter: brightness(1.2);
+}
+button:active {
+  filter: brightness(1);
 }
