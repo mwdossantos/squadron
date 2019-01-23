@@ -7,40 +7,26 @@
 }
 
 body {
-  background-color: white;
+  background-color: var(--body-bg);
 }
 
 a {
-  text-decoration: none;
+  color: var(--blue);
+  font-size: 18px;
+  font-family: var(--pr);
+  text-decoration: underline;
   outline: none;
-  color: inherit;
   transition: all .2s ease;
+}
+
+h1 {
+  font-size: 2em;
+  color: var(--white);
 }
 
 p {
   font-family: var(--pr);
-  opacity: 0.6;
-  margin: 20px auto;
-  line-height: 25px;
-}
-
-
-button {
-  outline: none;
-  cursor: pointer;
-  padding: 15px;
-  background-color: var(--blue);
-  color: white;
-  font-size: 16px;
-  font-family: var(--pr)!important;
-  border-radius: 5px;
-  border: none;
-  transition: all .1s ease;
-}
-
-button:hover {
-  filter: brightness(1.2);
-}
-button:active {
-  filter: brightness(1);
+  line-height: 23px;
+  font-size: 18px;
+  color: var(--p-color);
 }

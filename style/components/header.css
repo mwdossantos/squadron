@@ -1,0 +1,35 @@
+header {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.header-image {
+  width: 100%;
+}
+
+header .container {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  right: 30px;
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .container h1 {
+  font-size: 34px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-container img {
+  filter: var(--invert);
+  margin-left: 5px;
+  width: 30px;
+}

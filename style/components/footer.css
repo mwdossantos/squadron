@@ -1,0 +1,10 @@
+footer {
+  text-align: center;
+  border-top: 2px solid var(--input-color);
+}
+
+.payment-providers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

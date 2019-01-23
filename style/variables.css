@@ -11,11 +11,6 @@
 
 :root {
 
-  /* font weights */
-  --regular: 400;
-  --medium: 500;
-  --bold: 600;
-
   /* font styles */
   --italic: italic;
 
@@ -26,14 +21,15 @@
   /* font colors */
   --white: white;
   --black: black;
-  --green: #4CD964;
-  --blue: #0095FF;
+  --blue: #2A7FF6;
+  --input-color: rgba(255,255,255,0.1);
+  --p-color: rgba(220, 220, 255, 0.5);
+  --invert: invert(1);
   --darken: brightness(0.8);
   --lighten: brightness(1.2);
 
   /* colors */
-  --squadron: #182B3A;
-  --body-bg: #FCFCFC;
+  --body-bg: #0C0C2C;
 
   /* button colors */
   --primary: ;
