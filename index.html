@@ -20,6 +20,9 @@
   </head>
 
   <body>
+    <div class="message-sent">
+      <p>Bedankt! Je hoort zo snel mogelijk terug van het Squadron</p>
+    </div>
 
     <div class="app">
       <header>
@@ -32,7 +35,6 @@
           </div>
         </div>
       </header>
-
       <div class="main">
         <section>
           <h1>De wildernis op het web</h1><br>
@@ -102,9 +104,9 @@
                   <br><br>
                   Laat je nummer achter en we bellen je binnen 1 werkdag terug om te bespreken wat je nodig hebt.</p>
               </div>
-              <form class="contact-form">
+              <form class="contact-form" action="https://send.pageclip.co/QGqwZobqxW1hhf4FcQrm9U00ZT9hczkV/contact-form" method="post">
                 <div class="input-container">
-                  <input type="tel" name="phonenumber" placeholder="Je telefoonnummer">
+                  <input type="tel" name="phonenumber" required placeholder="Je telefoonnummer">
                   <img src="style/img/nummer.png">
                 </div>
 
@@ -113,7 +115,6 @@
                   <img src="style/img/belmij.png">
                 </button>
               </form>
-
             </div>
           </div>
           <br><br>
@@ -149,9 +150,9 @@
               <div class="price-bottom-text">
                 <p>Eenmalige betaling. Laat je nummer achter en we bellen je binnen 1 werkdag terug om te bespreken wat je nodig hebt.</p>
               </div>
-              <form class="contact-form">
+              <form class="contact-form" action="https://send.pageclip.co/QGqwZobqxW1hhf4FcQrm9U00ZT9hczkV/contact-form" method="post">
                 <div class="input-container">
-                  <input type="tel" name="phonenumber" placeholder="Je telefoonnummer">
+                  <input type="tel" name="phonenumber" required placeholder="Je telefoonnummer">
                   <img src="style/img/nummer.png">
                 </div>
 
@@ -160,7 +161,6 @@
                   <img src="style/img/belmij.png">
                 </button>
               </form>
-
             </div>
           </div>
         </section>
@@ -183,20 +183,20 @@
 
         <br><br>
 
-        <section>
+        <section id="contact">
           <div class="art-container">
             <img src="style/img/contact-art.png" class="art-image">
             <h1 class="right">Contact</h1>
           </div>
           <br>
           <p>Stuur ons je vraag en we zullen binnen 1 werkdag antwoorden.</p>
-          <form class="contact-form">
+          <form class="contact-form" action="https://send.pageclip.co/QGqwZobqxW1hhf4FcQrm9U00ZT9hczkV/contact-form" method="post">
             <div class="input-container">
-              <input type="email" name="email" value="" placeholder="Je email">
+              <input type="email" name="email" required placeholder="Je email">
               <img src="style/img/email.png">
             </div>
             <div class="input-container textie">
-              <textarea type="text" name="bericht" value="" placeholder="Je bericht"></textarea>
+              <textarea type="text" name="bericht" required placeholder="Je bericht"></textarea>
               <img src="style/img/bericht.png">
             </div>
 
@@ -216,9 +216,9 @@
           </div>
           <br>
           <p>Schrijf je in voor de nieuwsbrief van het Squadron zodat je up to date blijft over onze ontwikkelingen en ontwikkelingen in de industrie.</p>
-          <form class="contact-form">
+          <form class="contact-form" action="https://send.pageclip.co/QGqwZobqxW1hhf4FcQrm9U00ZT9hczkV/contact-form" method="post">
             <div class="input-container">
-              <input type="email" name="email" value="" placeholder="Je email">
+              <input type="email" name="email" required placeholder="Je email">
               <img src="style/img/email.png">
             </div>
 
@@ -231,9 +231,6 @@
 
         <br><br>
       </div>
-
-
-
       <footer>
         <br><br>
         <a href="#">Gebruiksovereenkomst</a><br><br>
@@ -256,13 +253,11 @@
         </div>
         <br><br>
       </footer>
-
     </div>
-
     <script type="text/javascript" src="js/jquery.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script type="text/javascript" src="js/script.js"></script>
-
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
   </body>
 
 </html>

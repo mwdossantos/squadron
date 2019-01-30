@@ -1,5 +1,6 @@
 form {
   margin-top: 20px;
+  transition: all .2s ease;
 }
 
 .input-container {
@@ -30,6 +31,7 @@ input {
   color: var(--white);
   border: none;
   outline: none;
+  transition: all .2s ease;
 }
 
 input::placeholder {
@@ -66,10 +68,16 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all .2s ease;
 }
 
 button img {
   width: 30px;
   filter: var(--invert);
   margin-left: 10px;
+}
+
+button:hover {
+  filter: var(--lighten);
+  cursor: pointer;
 }

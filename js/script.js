@@ -3,6 +3,7 @@
    // the DOM will be available here
    animator();
    other();
+
 })();
 
 function animator() {
@@ -17,5 +18,21 @@ function animator() {
 }
 
 function other() {
+  $(".contact-container").click(function() {
+    navigator("#contact","_self");
+  })
 
+  $(".contact-form").submit(function () {
+    sendContactForm();
+    return false;
+  });
+}
+
+function sendContactForm() {
+  $(".message-sent").slideDown("slow");
+  setTimeout('$(".message-sent").slideUp();', 4000);
+}
+
+function navigator(location,name) {
+  window.open(location,name);
 }
