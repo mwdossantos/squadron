@@ -6,8 +6,17 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Squadron">
     <title>Squadron Interactive </title>
     <link rel="icon" type="image/png" href="squadron-favi.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="squadron-favi-ios.png">
+
+    <!-- iPhone X, Xs (1125px x 2436px) -->
+    <link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" href="apple-launch-1125x2436.png">
+
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
     <link rel="stylesheet" href="style/variables.css" type="text/css">
     <link rel="stylesheet" href="style/global.css" type="text/css">
     <link rel="stylesheet" href="style/queries.css" type="text/css">
@@ -19,16 +28,12 @@
     <link rel="stylesheet" href="style/components/footer.css" type="text/css">
   </head>
 
-  <body>
-    <div class="message-sent">
-      <p>Bedankt! Je hoort zo snel mogelijk terug van het Squadron</p>
-    </div>
-
+  <body ontouchstart=””>
     <div class="app">
       <header>
         <div class="header-image"></div>
         <div class="container">
-          <h1>Squadron</h1>
+          <h1 id="squadron-logo">Squadron</h1>
           <div class="contact-container">
             <h3>Contact</h3>
             <img src="style/img/verstuur.png">
@@ -100,17 +105,17 @@
                 <h1>€ 79,99</h1>
               </div>
               <div class="price-bottom-text">
-                <p>Per maand gedurende een jaar lang. Na 1 jaar betaal je alleen nog voor dagelijks support voor € 24,99 per maand.
+                <p>Per maand gedurende een jaar lang. Na 1 jaar betaal je alleen nog voor Dagelijks support voor € 24,99 per maand.
                   <br><br>
                   Laat je nummer achter en we bellen je binnen 1 werkdag terug om te bespreken wat je nodig hebt.</p>
               </div>
-              <form class="contact-form" action="https://send.pageclip.co/QGqwZobqxW1hhf4FcQrm9U00ZT9hczkV/contact-form" method="post">
+              <form class="form-style pageclip-form" action="https://send.pageclip.co/QGqwZobqxW1hhf4FcQrm9U00ZT9hczkV/squadron-support" method="post">
                 <div class="input-container">
-                  <input type="tel" name="phonenumber" required placeholder="Je telefoonnummer">
+                  <input type="tel" name="Telefoonnummer" required placeholder="Je telefoonnummer">
                   <img src="style/img/nummer.png">
                 </div>
 
-                <button type="submit" name="button">
+                <button type="submit" name="Join het Squadron">
                   Join het Squadron
                   <img src="style/img/belmij.png">
                 </button>
@@ -150,13 +155,13 @@
               <div class="price-bottom-text">
                 <p>Eenmalige betaling. Laat je nummer achter en we bellen je binnen 1 werkdag terug om te bespreken wat je nodig hebt.</p>
               </div>
-              <form class="contact-form" action="https://send.pageclip.co/QGqwZobqxW1hhf4FcQrm9U00ZT9hczkV/contact-form" method="post">
+              <form class="form-style pageclip-form" action="https://send.pageclip.co/QGqwZobqxW1hhf4FcQrm9U00ZT9hczkV/branding-support" method="post">
                 <div class="input-container">
-                  <input type="tel" name="phonenumber" required placeholder="Je telefoonnummer">
+                  <input type="tel" name="Telefoonnummer" required placeholder="Je telefoonnummer">
                   <img src="style/img/nummer.png">
                 </div>
 
-                <button type="submit" name="button">
+                <button type="submit" name="Branding Support">
                   Bel me terug
                   <img src="style/img/belmij.png">
                 </button>
@@ -190,17 +195,17 @@
           </div>
           <br>
           <p>Stuur ons je vraag en we zullen binnen 1 werkdag antwoorden.</p>
-          <form class="contact-form" action="https://send.pageclip.co/QGqwZobqxW1hhf4FcQrm9U00ZT9hczkV/contact-form" method="post">
+          <form class="form-style pageclip-form" action="https://send.pageclip.co/QGqwZobqxW1hhf4FcQrm9U00ZT9hczkV/contact-form" method="post">
             <div class="input-container">
-              <input type="email" name="email" required placeholder="Je email">
+              <input type="email" name="E-mail" required placeholder="Je email">
               <img src="style/img/email.png">
             </div>
             <div class="input-container textie">
-              <textarea type="text" name="bericht" required placeholder="Je bericht"></textarea>
+              <textarea type="text" name="Bericht" required placeholder="Je bericht"></textarea>
               <img src="style/img/bericht.png">
             </div>
 
-            <button type="submit" name="button">
+            <button type="submit" name="Contact verzoek">
               Verstuur bericht
               <img src="style/img/verstuur.png">
             </button>
@@ -216,13 +221,13 @@
           </div>
           <br>
           <p>Schrijf je in voor de nieuwsbrief van het Squadron zodat je up to date blijft over onze ontwikkelingen en ontwikkelingen in de industrie.</p>
-          <form class="contact-form" action="https://send.pageclip.co/QGqwZobqxW1hhf4FcQrm9U00ZT9hczkV/contact-form" method="post">
+          <form class="form-style pageclip-form" action="https://send.pageclip.co/QGqwZobqxW1hhf4FcQrm9U00ZT9hczkV/nieuwtjes" method="post">
             <div class="input-container">
-              <input type="email" name="email" required placeholder="Je email">
+              <input type="email" name="E-mail" required placeholder="Je email">
               <img src="style/img/email.png">
             </div>
 
-            <button type="submit" name="button">
+            <button type="submit" name="Nieuwsbrief">
               Schrijf me in
               <img src="style/img/schrijfin.png">
             </button>

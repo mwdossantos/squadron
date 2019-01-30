@@ -8,6 +8,9 @@
 
 body {
   background-color: var(--body-bg);
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
 }
 
 a {

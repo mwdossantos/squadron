@@ -81,3 +81,9 @@ button:hover {
   filter: var(--lighten);
   cursor: pointer;
 }
+
+.pageclip-form__success {
+  background-color: var(--white)!important;
+  border-radius: 7px!important;
+  margin: 20px!important;
+}
