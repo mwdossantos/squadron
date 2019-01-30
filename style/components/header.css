@@ -1,10 +1,14 @@
 header {
   margin-bottom: 20px;
   width: 100%;
+  position: relative;
 }
 
 .header-image {
-  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: bottom;
+  background-image: url("../img/art-squadron.png");
 }
 
 header .container {

@@ -22,7 +22,8 @@
   --white: white;
   --black: black;
   --blue: #2A7FF6;
-  --input-color: rgba(255,255,255,0.1);
+  --input-color: rgba(255,255,255,0.05);
+  --border-color: rgba(255,255,255,0.1);
   --p-color: rgba(220, 220, 255, 0.5);
   --invert: invert(1);
   --darken: brightness(0.8);

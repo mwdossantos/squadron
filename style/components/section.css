@@ -20,3 +20,61 @@ section {
   margin-right: 30px;
   text-align: right;
 }
+
+.price-container {
+  border-radius: 7px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.price-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.price-top img {
+  width: 25px;
+  opacity: 0.5;
+  margin-left: 10px;
+}
+
+.price-top h2 {
+  color: var(--p-color);
+}
+
+.price-middle-item {
+  margin: 20px;
+}
+
+.price-middle-item h3 {
+  color: var(--white);
+}
+
+.price-middle-item p {
+  color: var(--p-color);
+  font-size: 16px;
+}
+
+.price-bottom-total {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 20px;
+}
+
+.price-bottom-total p {
+  margin-right: 10px;
+}
+
+.price-bottom-text p {
+  margin: 20px;
+  font-size: 16px;
+}
+
+.price-bottom form {
+  margin: 20px;
+}
