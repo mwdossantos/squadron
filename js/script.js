@@ -1,7 +1,6 @@
 (function() {
    // your page initialization code here
    // the DOM will be available here
-   $(".pageclip-form__success__message").html("Bedankt! Het Squadron neemt zo snel mogelijk contact met je op 🚀");
    animator();
    other();
 
@@ -43,7 +42,6 @@ function other() {
   $(".contact-container").click(function() {
     navigator("#contact","_self");
   });
-
 }
 
 
