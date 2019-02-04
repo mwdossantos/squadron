@@ -22,7 +22,7 @@ function animator() {
     opacity: 0,
   });
 
-  ScrollReveal().reveal('p, form, h1, h2, h3, a, .price-container, input, button, .progression-image', {
+  ScrollReveal().reveal('p, form, h1, h2, h3, a, .price-container, input, button, .progression-image, img', {
     origin: 'bottom',
     distance: '25px',
     opacity: 0,
