@@ -1,0 +1,7 @@
+.bedankt-pagina {
+  background-image: url("../img/art-squadron-2.jpg");
+}
+
+body {
+  background-color: var(--body-bg-bedankt);
+}
