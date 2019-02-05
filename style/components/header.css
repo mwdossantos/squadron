@@ -11,6 +11,15 @@ header {
   background-image: url("../img/art-squadron.png");
 }
 
+.gradient-home {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background-image: linear-gradient(-180deg, rgba(46,15,52,0.00) 0%, #0e0f39 100%);
+}
+
 header .container {
   position: absolute;
   top: 30px;
