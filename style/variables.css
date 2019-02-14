@@ -27,7 +27,7 @@
   --p-color: rgba(220, 220, 255, 0.5);
   --invert: invert(1);
   --darken: brightness(0.8);
-  --lighten: brightness(1.2);
+  --lighten: brightness(1.4);
 
   /* colors */
   --body-bg: #0e0f39;
