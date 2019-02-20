@@ -5,19 +5,232 @@
   <meta charset="utf-8">
   <title>A4</title>
 
-  <!-- Normalize or reset CSS with your favorite library -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-
   <!-- Load paper.css for happy printing -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.4.1/paper.css">
 
   <!-- Set page size here: A5, A4 or A3 -->
   <!-- Set also "landscape" if you need -->
-  <style>@page { size: A4 }
+  <style>
+
+    @page { size: A4 }
+
+    :root {
+
+      /* font styles */
+      --italic: italic;
+
+      /* font family's */
+      --default: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+
+      /* font colors */
+      --white: white;
+      --black: black;
+      --blue: #2A7FF6;
+      --input-color: rgba(255,255,255,0.05);
+      --border-color: rgba(255,255,255,0.1);
+      --p-color: rgba(220, 220, 255, 0.8);
+      --invert: invert(1);
+      --darken: brightness(0.8);
+      --lighten: brightness(1.4);
+
+      /* colors */
+      --body-bg: #0e0f39;
+      --body-bg-bedankt: #2e0f34;
+      --body-bg-offerte: #0C2C25;
+    }
 
     .sheet {
       background-image: url('style/img/squadron_factuur_bg.png');
       background-size: cover;
+
+    }
+
+    * {
+      font-family: var(--default);
+      margin: 0;
+    }
+
+    .company-info {
+      position: absolute;
+      right: 20mm;
+      text-align: right;
+    }
+
+    a {
+      color: var(--blue);
+      font-size: 18px;
+      font-family: var(--default);
+      text-decoration: underline;
+      outline: none;
+      transition: all .2s ease;
+    }
+
+    h1 {
+      font-size: 2em;
+      color: var(--white);
+    }
+
+    h2 {
+      font-size: 18px!important;
+    }
+
+    h3 {
+      font-size: 16px!important;
+    }
+
+    p {
+      font-family: var(--default);
+      font-size: 14px!important;
+      color: var(--p-color);
+    }
+
+    .horizontal-divider {
+      width: 100%;
+      height: 1px;
+      background-color: var(--border-color);
+    }
+
+    .footnote {
+      font-size: 14px;
+    }
+
+    .message-sent {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      left: 20px;
+      z-index: 1;
+      text-align: center;
+      background-color: white;
+      border-radius: 7px;
+      padding: 20px;
+      display: none;
+    }
+
+    .message-sent p {
+      color: var(--black);
+    }
+
+    section {
+      margin: 0px 20px 0px 20px;
+      text-align: center;
+    }
+
+    .art-image {
+      width: 100%;
+    }
+
+    .art-container h1 {
+      margin-top: -30px;
+    }
+
+    .left {
+      margin-left: 30px;
+      text-align: left;
+    }
+
+    .right {
+      margin-right: 30px;
+      text-align: right;
+    }
+
+    .price-container {
+      border-radius: 7px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    .price-top {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .price-top img {
+      width: 25px;
+      opacity: 0.8;
+      margin-left: 10px;
+    }
+
+    .price-top h2 {
+      color: var(--p-color);
+    }
+
+    .price-middle-item {
+      margin: 20px;
+    }
+
+    .price-middle-item h3 {
+      color: var(--white);
+    }
+
+    .price-middle-item p {
+      color: var(--p-color);
+      font-size: 16px;
+    }
+
+    .price-bottom-total {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      margin: 20px;
+    }
+
+    .price-bottom-total p {
+      margin-right: 10px;
+    }
+
+    .price-bottom-text p {
+      margin: 10px;
+      font-size: 16px;
+    }
+
+    .price-bottom form {
+      margin: 20px;
+    }
+
+    .price-bottom {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .progression-container {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .progression-image {
+      padding: 15px;
+      background-color: var(--input-color);
+      border: 1px solid var(--border-color);
+      border-radius: 7px;
+      box-sizing: border-box;
+      width: 100%;
+    }
+
+    .client-details {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .client-details-text {
+      margin: 20px 0px;
+      display: flex;
+      justify-content: space-around;
+    }
+    .client-details-text p {
+      margin: 0px 0px!important;
+    }
+    .client-details-text h2 {
+      margin-bottom: 10px!important;
+      color: white!important;
     }
 
   </style>
@@ -31,6 +244,84 @@
   <!-- "padding-**mm" is optional: you can set 10, 15, 20 or 25 -->
   <section class="sheet padding-20mm">
 
+    <div class="price-container">
+        <div class="price-top">
+            <h2>Squadron Support Pakket</h2><img src="style/img/ss-icon.png"></div>
+            <br>
+            <p>€ 79,99 per maand <br><strong>exclusief</strong> 21% BTW, gedurende één jaar</p>
+            <br>
+        <div class="price-middle">
+
+            <div class="horizontal-divider"></div>
+            <div class="price-top">
+                <h2>Gekozen extra's</h2><img src="style/img/extras.png"></div>
+            <div class="price-middle-item">
+                <h3>Branding Support Pakket</h3>
+                <p>Geef je bedrijf de welverdiende boost om beter voor de dag te komen. Wanneer je deze extra kiest, ontvang je 10% korting op de totale prijs.</p>
+                <br>
+                <p>+ € 49,99 per maand <br><strong>exclusief</strong> 21% BTW, gedurende één jaar</p>
+            </div>
+            <div class="price-middle-item">
+              <h3>SEO optimalisatie</h3>
+              <p>Je bedrijf zal gevonden worden in het wild, zodat jij niet achterblijft als voer voor roofdieren</p>
+              <br>
+              <p>+ € 4,99 per maand <br><strong>exclusief</strong> 21% BTW, gedurende één jaar</p>
+            </div>
+            <div class="price-middle-item">
+                <h3>Dagelijks support en hosting</h3>
+                <p>Contact met het Squadron wanneer je vragen hebt of aanpassingen nodig hebt en ijzersterke hosting</p>
+                <br>
+                <p>+ € 24,99 per maand <br><strong>exclusief</strong> 21% BTW, gedurende één jaar</p>
+            </div>
+        </div>
+        <div class="horizontal-divider"></div>
+        <div class="price-bottom">
+            <div class="price-bottom-total">
+                <p>Voor</p>
+                <h1>€ 159,96</h1>
+                <p>Exclusief 21% BTW <span style="color:white;">€ 33,59</span></p>
+                <div style="margin: 10px 0px;" class="horizontal-divider"></div>
+                <p>Totaal <span style="color:white;">€ 193,55</span></p>
+            </div>
+            <div>
+              <p>Per maand, gedurende één jaar van:</p>
+              <strong><p style="color: white;" id="customer-iban">NL 20 BUNQ 2291 3037 32</p></strong>
+            </div>
+
+        </div>
+        <div class="price-bottom-text">
+
+            <div class="horizontal-divider"></div>
+            <div class="client-details">
+              <p>
+                Klant ID
+                <br>
+                <span id="customer-id">cst_3h9j8GxQEP</span>
+              </p>
+              <p>
+                Bestelling ID
+                <br>
+                <span id="order-id">tr_BM4QMQEpKb</span>
+              </p>
+
+            </div>
+            <div class="client-details-text">
+              <div>
+                <h2>Matthew Wilson</h2>
+                <p>Squadron Interactive</p>
+                <p>Koekoekstraat 61</p>
+                <p>2352CW Leiderdorp</p>
+              </div>
+              <div>
+                <h2>Jeanne Schutgens</h2>
+                <p>Cécile's</p>
+                <p>Raaphorst 1</p>
+                <p>2352KH Leiderdorp</p>
+              </div>
+            </div>
+
+        </div>
+    </div>
     <!-- Write HTML just like a web page -->
 
   </section>
