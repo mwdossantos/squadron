@@ -1,4 +1,3 @@
-/* COOLORS https://coolors.co/182b3a-56e39f-fcfcfc-424b54-160c28 */
 @font-face {
   font-family: pr;
   src: url('fonts/Product Sans Regular.ttf');
@@ -10,9 +9,6 @@
 }
 
 :root {
-
-  /* font styles */
-  --italic: italic;
 
   /* font family's */
   --pr: pr;
@@ -29,9 +25,9 @@
   --darken: brightness(0.8);
   --lighten: brightness(1.4);
 
-  /* colors */
+  /* bg colors */
   --body-bg: #0e0f39;
-  --body-bg-bedankt: #2e0f34;
   --body-bg-verzonden: black;
+  --body-bg-bedankt: #2e0f34;
   --body-bg-offerte: #0C2C25;
 }
