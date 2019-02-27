@@ -1,6 +1,7 @@
 (function() {
    // your page initialization code here
    // the DOM will be available here
+   $("body").delay(0).animate({ opacity: 1 }, 700)
    animator();
    other();
 

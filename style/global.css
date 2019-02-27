@@ -11,6 +11,7 @@ body {
   -webkit-user-select: none;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
+  opacity: 0;
 }
 
 a {
