@@ -7,6 +7,10 @@ section {
   width: 100%;
 }
 
+.flip {
+  transform: scaleX(-1);
+}
+
 .art-container h1 {
   margin-top: -30px;
 }
@@ -42,20 +46,20 @@ section {
 }
 
 .price-top h2 {
-  color: var(--p-color);
+  color: var(--white);
 }
 
 .price-middle-item {
   margin: 20px;
 }
 
-.price-middle-item h3 {
-  color: var(--white);
+.price-middle-item h3, h2 {
+  color: var(--p-color);
 }
 
 .price-middle-item p {
   color: var(--p-color);
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .price-bottom-total {
